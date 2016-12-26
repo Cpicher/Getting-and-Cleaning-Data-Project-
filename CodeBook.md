@@ -70,4 +70,144 @@ Labels describing explicetly the activities were applied. Following rules have b
 -"BodyBody" -> "Body"
 
 And then a  tidy data set was created containing the mean of each feature for each subject and each activity. 
-The tidy data set is an output txt file
+The tidy data set is an output txt file.
+
+RESULTING DATA SET:
+-------------------
+Feature                                               Values
+
+subject                                               numeric: 1 to 30
+
+activityfactor:                                       WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING,LAYING
+
+time.body.accelerometer.mean.x                        numeric
+
+time.body.accelerometer.mean.y                        numeric
+
+time.body.accelerometer.mean.z                        numeric
+
+time.body.accelerometer.std.x                         numeric
+
+time.body.accelerometer.std.y                         numeric
+
+time.body.accelerometer.std.z                         numeric
+
+time.gravity.accelerometer.mean.x                     numeric
+
+time.gravity.accelerometer.mean.y                     numeric
+
+time.gravity.accelerometer.mean.z                     numeric
+
+time.gravity.accelerometer.std.x                      numeric
+
+time.gravity.accelerometer.std.y                      numeric
+
+time.gravity.accelerometer.std.z                      numeric
+
+time.body.accelerometer.jerk.mean.x                   numeric
+
+time.body.accelerometer.jerk.mean.y                   numeric
+
+time.body.accelerometer.jerk.mean.z                   numeric
+
+time.body.accelerometer.jerk.std.x                    numeric
+
+time.body.accelerometer.jerk.std.y                    numeric
+
+time.body.accelerometer.jerk.std.z                    numeric
+
+time.body.gyroscope.mean.x                            numeric
+
+time.body.gyroscope.mean.y                            numeric
+
+time.body.gyroscope.mean.z                            numeric
+
+time.body.gyroscope.std.x                             numeric
+
+time.body.gyroscope.std.y                             numeric
+
+time.body.gyroscope.std.z                             numeric
+
+time.body.gyroscope.jerk.mean.x                       numeric
+
+time.body.gyroscope.jerk.mean.y                       numeric
+
+time.body.gyroscope.jerk.mean.z                       numeric
+
+time.body.gyroscope.jerk.std.x                        numeric
+
+time.body.gyroscope.jerk.std.y                        numeric
+
+time.body.gyroscope.jerk.std.z                        numeric
+
+time.body.accelerometer.magnitude.mean                numeric
+
+time.body.accelerometer.magnitude.std                 numeric
+
+time.gravity.accelerometer.magnitude.mean             numeric
+
+time.gravity.accelerometer.magnitude.std              numeric
+
+time.body.accelerometer.jerk.magnitude.mean           numeric
+
+time.body.accelerometer.jerk.magnitude.std            numeric
+
+time.body.gyroscope.magnitude.mean                    numeric
+
+time.body.gyroscope.magnitude.std                     numeric
+
+time.body.gyroscope.jerk.magnitude.mean               numeric
+
+time.body.gyroscope.jerk.magnitude.std                numeric
+
+frequency.body.accelerometer.mean.x                    numeric
+
+frequency.body.accelerometer.mean.y                    numeric
+
+frequency.body.accelerometer.mean.z                    numeric
+
+frequency.body.accelerometer.std.x                     numeric
+
+frequency.body.accelerometer.std.y                     numeric
+
+frequency.body.accelerometer.std.z                     numeric
+
+frequency.body.accelerometer.jerk.mean.x               numeric
+
+frequency.body.accelerometer.jerk.mean.y               numeric
+
+frequency.body.accelerometer.jerk.mean.z               numeric
+
+frequency.body.accelerometer.jerk.std.x                numeric
+
+frequency.body.accelerometer.jerk.std.y                numeric
+
+frequency.body.accelerometer.jerk.std.z                numeric
+
+frequency.body.gyroscope.mean.x                        numeric
+
+frequency.body.gyroscope.mean.y                        numeric
+
+frequency.body.gyroscope.mean.z                        numeric
+
+frequency.body.gyroscope.std.x                         numeric
+
+frequency.body.gyroscope.std.y                         numeric
+
+frequency.body.gyroscope.std.z                         numeric
+
+frequency.body.accelerometer.magnitude.mean            numeric
+
+frequency.body.accelerometer.magnitude.std             numeric
+
+frequency.body.body.accelerometer.jerk.magnitude.mean  numeric
+
+frequency.body.body.accelerometer.jerk.magnitude.std   numeric
+
+frequency.body.body.gyroscope.magnitude.mean           numeric
+
+frequency.body.body.gyroscope.magnitude.std            numeric
+
+frequency.body.body.gyroscope.jerk.magnitude.mean      numeric
+
+frequency.body.body.gyroscope.jerk.magnitude.std       numeric
