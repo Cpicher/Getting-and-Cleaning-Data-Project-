@@ -43,3 +43,13 @@ For each record it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
+TRANSFORMATION DETAILS:
+----------------------
+Data files were read into data frames, with appropriate column headers.
+Training and test data sets were merged into a single data set.
+Then only variables containing measurements with mean and standard deviation were kept. 
+This left 66 feature columns, plus the subjectID and activity columns.
+Labels describing explicetly the activities were applied.
+And then a  tidy data set was created containing the mean of each feature for each subject and each activity. 
+The tidy data set is an output txt file
