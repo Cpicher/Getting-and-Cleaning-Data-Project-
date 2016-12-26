@@ -13,7 +13,7 @@ INSTRUCTIONS:
 
 1. Download the run_analysis.R script in your local folder.
 2. Set the local folder as your working directory using setwd() function in RStudio.
-3. Run the script "run_analysis.R".
+3. Run the script "run_analysis.R" with the command : source('run_analysis.R')
 
 INFORMATIONS:
 
