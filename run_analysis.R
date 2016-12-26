@@ -1,3 +1,5 @@
+RunAnalysis <- function() {
+  
 ### 1.Merges the training and the test sets to create one data set.
 # Create a local repository
 dir.create("./UCI HAR Dataset")
@@ -66,3 +68,5 @@ My_Result <- aggregate(. ~subject + activityName, My_DataMeanStd, mean)
 My_Result <- My_Result[order(My_Result$subject, My_Result$activityName),]
 # create the output file
 write.table(My_Result, "My_TidyData.txt", row.name=FALSE)
+}
+RunAnalysis()
