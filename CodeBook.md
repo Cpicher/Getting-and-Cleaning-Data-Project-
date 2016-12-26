@@ -51,7 +51,23 @@ Then only variables containing measurements with mean and standard deviation wer
 
 This left 66 feature columns, plus the subjectID and activity columns.
 
-Labels describing explicetly the activities were applied.
+Labels describing explicetly the activities were applied. Following rules have been applied :
+
+-"std()" -> "SD"
+
+-"mean()" -> "MEAN"
+
+-"^t" -> "time"
+
+-"^f" -> "frequency"
+
+-"Acc" -> "Accelerometer"
+
+-"Gyro" -> "Gyroscope"
+
+-"Mag" -> "Magnitude"
+
+-"BodyBody" -> "Body"
 
 And then a  tidy data set was created containing the mean of each feature for each subject and each activity. 
 The tidy data set is an output txt file
