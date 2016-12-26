@@ -1,8 +1,12 @@
 ### 1.Merges the training and the test sets to create one data set.
+# Create a local repository
 > dir.create("./UCI HAR Dataset")
+# Download the zip file
 > fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 > download.file(fileUrl,destfile="./Dataset.zip")
+# unzip the data set into a Data repository
 > unzip(zipfile="./Dataset.zip",exdir="./Data")
+# change the working directory
 > setwd("./Data/UCI HAR Dataset")
 > FilePath <- getwd()
 
@@ -22,10 +26,12 @@
 > My_DataSet <- rbind(Training_Set, Test_Set)
 > My_Labels <- rbind(Training_Labels, Test_Labels)
 > My_Subject <- rbind(subject_Train, subject_Test)
+# add variables names
 > names(My_Labels) <- "activityNum"
 > names(My_Subject) <- "subject"
 > features <- read.table("./features.txt")[,2]
 > names(My_DataSet) <- features
+# Add colomn 
 > My_DataSet <- cbind(My_Labels, My_Subject,My_DataSet)
 
 ## 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -58,4 +64,5 @@
 ## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 > My_Result <- aggregate(. ~subject + activityName, My_DataMeanStd, mean)
 > My_Result <- My_Result[order(My_Result$subject, My_Result$activityName),]
+# create the output file
 > write.table(My_Result, "My_TidyData.txt", row.name=FALSE)
